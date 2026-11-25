@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="th">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="BRIGHT Oral Care — แปรงสีฟันเพื่อรอยยิ้มที่ดี">
+<title>BRIGHT — Oral Care</title><link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="top"><a class="brand" href="#">BR<span>IGHT</span><small>ORAL CARE</small></a>
+<nav><a href="#shop">สินค้า</a><a href="#story">เกี่ยวกับเรา</a><a href="#fulfillment">จัดการออเดอร์</a></nav>
+<button class="cart" id="cartBtn">ตะกร้า <b id="cartCount">0</b></button></header>
+<main>
+<section class="hero"><div><p class="eyebrow">EVERYDAY ORAL CARE</p><h1>เริ่มต้นรอยยิ้มที่ดี<br><em>จากแปรงสีฟันที่ใช่</em></h1>
+<p class="lead">ดูแลช่องปากอย่างอ่อนโยน ด้วยแปรงสีฟันที่คัดสรรมาเพื่อทุกวันของคุณ</p>
+<a class="primary" href="#shop">เลือกซื้อสินค้า <span>↗</span></a><p class="hero-note">จัดส่งทั่วประเทศ · แพ็กอย่างใส่ใจ</p></div>
+<div class="hero-art"><div class="sun"></div><img src="assets/brush-hero.svg" alt="ภาพแปรงสีฟัน"></div></section>
+<section class="trust"><div><b>02</b><span>สินค้าให้เลือก</span></div><div><b>SOFT</b><span>ถนอมเหงือก</span></div><div><b>CARE</b><span>ใส่ใจทุกคำสั่งซื้อ</span></div></section>
+<section id="shop" class="section"><div class="section-head"><div><p class="eyebrow">OUR PRODUCTS</p><h2>สินค้าของเรา</h2></div><p>เลือกแปรงที่เหมาะกับคุณ</p></div><div id="products" class="products"></div></section>
+<section id="story" class="why"><div><p class="eyebrow">WHY BRIGHT</p><h2>เรื่องเล็ก ๆ<br>ที่สร้างความต่าง</h2></div><p>เราเชื่อว่าการดูแลสุขภาพช่องปากควรเริ่มได้ง่ายทุกวัน เลือกใช้แปรงสีฟันที่เหมาะกับคุณ พร้อมจัดส่งสินค้าอย่างเป็นระเบียบและตรวจสอบได้</p></section>
+<section id="fulfillment" class="section ops"><div class="section-head"><div><p class="eyebrow">FULFILLMENT CENTER</p><h2>จัดการคำสั่งซื้อ</h2></div><span class="pill">ระบบหลังร้าน / ตัวอย่างงานเรียน</span></div>
+<div class="dashboard"><div class="metric"><span>คำสั่งซื้อทั้งหมด</span><b id="orderTotal">0</b></div><div class="metric"><span>รอหยิบสินค้า</span><b id="pendingTotal">0</b></div><div class="metric"><span>แพ็กแล้ว</span><b id="packedTotal">0</b></div></div>
+<div class="orders"><div class="order-title"><h3>รายการคำสั่งซื้อ</h3><button class="outline" id="exportBtn">ดาวน์โหลด CSV</button></div><div id="orderList" class="empty">ยังไม่มีคำสั่งซื้อ — ทดลองสั่งซื้อสินค้าด้านบนได้เลย</div></div>
+<div class="sheet-note"><b>การเชื่อม Google Sheets</b><p>เว็บไซต์ทำงานได้ทันทีด้วยข้อมูลตัวอย่างและบันทึกออเดอร์ไว้ในเบราว์เซอร์ หากต้องการบันทึกลง Google Sheets ให้ทำตามคู่มือใน README และใส่ URL ของ Apps Script ใน <code>config.js</code></p></div>
+</section></main>
+<footer><a class="brand" href="#">BR<span>IGHT</span><small>ORAL CARE</small></a><p>© 2026 BRIGHT Oral Care · เว็บไซต์ตัวอย่างสำหรับงานเรียน</p></footer>
+<div id="toast" class="toast"></div>
+<div id="modal" class="modal hidden"><div class="modal-card"><button class="close" id="closeModal">×</button><p class="eyebrow">YOUR ORDER</p><h2>ยืนยันคำสั่งซื้อ</h2><div id="cartLines"></div><div class="total"><span>ยอดรวม</span><b id="cartTotal">฿0</b></div>
+<label>ชื่อผู้รับ<input id="customer" placeholder="ชื่อ-นามสกุล"></label><label>เบอร์โทรศัพท์<input id="phone" placeholder="08X-XXX-XXXX"></label><label>ที่อยู่จัดส่ง<textarea id="address" rows="3" placeholder="บ้านเลขที่ ถนน แขวง/ตำบล เขต/อำเภอ จังหวัด รหัสไปรษณีย์"></textarea></label>
+<button id="placeOrder" class="primary full">ยืนยันคำสั่งซื้อ</button></div></div>
+<script src="config.js"></script><script src="app.js"></script></body></html>
