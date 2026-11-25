@@ -1,4 +1,4 @@
-# BRIGHT Oral Care — โปรเจกต์เว็บไซต์ขายแปรงสีฟัน
+# MINTORA Oral Care — โปรเจกต์เว็บไซต์ขายแปรงสีฟัน
 
 ธีมเวอร์ชันนี้ปรับใหม่เป็น **เขียวมิ้นต์–ขาว** เน้นความสะอาด สดชื่น และอ่านง่าย โดยยังคงสินค้า 2 SKUs และฟังก์ชันเดิม
 
@@ -28,7 +28,7 @@
 > หมายเหตุ: เวอร์ชันเริ่มต้นเก็บออเดอร์ใน Local Storage ของเบราว์เซอร์ที่ใช้งาน ยังไม่ใช่ฐานข้อมูลกลาง และสต็อกตัวอย่างยังไม่ได้ตัดอัตโนมัติ
 
 ## เชื่อม Google Sheets (ต้องทำในบัญชี Google ของผู้เรียน)
-1. สร้าง Google Sheet ตั้งชื่อ `BRIGHT Orders`
+1. สร้าง Google Sheet ตั้งชื่อ `MINTORA Orders`
 2. สร้างหัวตารางแถวแรก: `Order ID | Date | Customer | Phone | Address | SKU | Product | Qty | Unit Price | Total | Status`
 3. ใน Google Sheets ไปที่ Extensions → Apps Script
 4. วางโค้ดจากไฟล์ `google-apps-script.gs` แล้ว Save
@@ -38,7 +38,7 @@
 8. ทดสอบสั่งซื้อ 1 รายการ และตรวจสอบ Google Sheet
 
 ## GitHub และ Vercel
-1. สร้าง GitHub repository ชื่อ `bright-toothbrush-store`
+1. สร้าง GitHub repository ชื่อ `mintora-toothbrush-store`
 2. อัปโหลดทุกไฟล์และโฟลเดอร์ใน ZIP นี้ โดยคงโครงสร้างเดิม
 3. เข้า Vercel แล้วเลือก Add New → Project → Import Git Repository
 4. เลือก repository นี้ แล้วกด Deploy (เป็นเว็บ Static ไม่ต้องตั้ง Build Command)
